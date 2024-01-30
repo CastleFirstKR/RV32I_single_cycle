@@ -29,7 +29,7 @@ module inst_mem(
 
 	reg[31:0]  inst_memory[0:1000];
 
-	initial $readmemb ("machinecode.txt", inst_memory);	// read test assembly code file
+	initial $readmemb ("machinecode.txt", inst_memory);	// read test Binary Instruction file
 always @ (*) begin
 	if (rst)
 		inst <= 32'b0;
